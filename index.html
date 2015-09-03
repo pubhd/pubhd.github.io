@@ -49,9 +49,12 @@
             #header{
                 margin-bottom:1em;   
             }
+            #header img{
+                width:100%;   
+            }
             #main{
                 font-size:2em;
-                width:34em; 
+                max-width:34em; 
                 line-height: 140%;
                 font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
                 text-align: left;
@@ -97,6 +100,13 @@
               background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
               text-decoration: none;
             }
+            
+            @media (max-width: 480px) {
+                .fleft, .fright{
+                    clear:both;
+                    width:100%;
+                }
+            }
 		</style>
 		
 		<title>PubhD | Can you explain your PhD in a pub?</title>
@@ -120,7 +130,7 @@
                     <div class="box fleft">
                         <a  class="btn" href="https://pubhd.wordpress.com/pubhd-locations/">Find a PubhD near you</a>
                     </div>
-                    <div class="box fright">
+                    <div class="box fleft">
                         <a class="btn" href="https://pubhd.wordpress.com/2013/12/10/how-to-set-up-a-pubhd-and-get-some-speakers/">Start a PubhD</a>
                     </div>
                 </div>
